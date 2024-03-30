@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Mars Rover Photos</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo.jpg" alt="logo">
+    </nav>
+  </header>
+  
+<table id="table" border="1">
+    <thead >
+      <tr >
+        <th>Abbreviation</th>
+        <th>Camera</th>
+        <th>Curiosity</th>
+        <th>Opportunity</th>
+        <th>Spirit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>FHAZ</td>
+        <td>Front Hazard Avoidance Camera</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+      </tr>
+      <tr>
+        <td>RHAZ</td>
+        <td>Rear Hazard Avoidance Camera</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+      </tr>
+      <tr>
+        <td>MAST</td>
+        <td>Mast Camera</td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CHEMCAM</td>
+        <td>Chemistry and Camera Complex</td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>MAHLI</td>
+        <td>Mars Hand Lens Imager</td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>MARDI</td>
+        <td>Mars Descent Imager</td>
+        <td>✔</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>NAVCAM</td>
+        <td>Navigation Camera</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+      </tr>
+      <tr>
+        <td>PANCAM</td>
+        <td>Panoramic Camera</td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+      </tr>
+      <tr>
+        <td>MINITES</td>
+        <td>Miniature Thermal Emission Spectrometer (Mini-TES)</td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+<div id="log">
+  <label for="solInput">Ingresa los datos para Observar Marte:</label>
+  <br>
+  <p>Ingresa la camara abreviada (apoyate de la tabla)</p>
+  <input type="text" id="camera">
+  <p>Ingresa el Robert(apoyate de la tabla)</p>
+  <input type="text" id="robert">
+  <p>Ingresa la fecha (Consulta la mision de cada Robert)</p>
+  <input type="date" id="solInput" >
+  <br>
+  <button id="init"  onclick="getPhotos()">Mostrar fotos</button>
+</div>
+
+
+<div id="photos"></div>
+
+<script src="marte.js">
+</script>
+
+</body>
+</html>
